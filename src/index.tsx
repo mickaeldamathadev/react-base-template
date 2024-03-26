@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import AppRouter from './nav/router';
+import './style/index.scss';
 
-const App: React.FC = () => {
-  return <div> Hello, world!</div>;
-};
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement,
+);
 
-const root = ReactDOM.createRoot(document.getElementById('root')!);
-
-root.render(<App />);
+root.render(<AppRouter />);
